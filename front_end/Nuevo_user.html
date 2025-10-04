@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 400px;
+            max-height: 80vh;
+            /* Alto máximo */
+            overflow-y: auto;
+            /* Habilitar scroll vertical */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2 class="text-center mb-4">Crear Cuenta</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Ingresar nombre"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Ingresar apellido"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    placeholder="Ingresar contraseña" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirmar contraseña:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                    placeholder="Repetir contraseña" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="role" class="form-label">Rol:</label>
+                <select class="form-select" id="role" name="role" required>
+                    <option value="" disabled selected>Seleccionar rol</option>
+                    <option value="student">Estudiante</option>
+                    <option value="teacher">Profesor</option>
+                    <option value="admin">Administrador</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Registrarse</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="login.html" class="text-decoration-none">¿Ya tienes cuenta? Iniciar sesión</a>
+        </div>
+    </div>
+</body>
+
+</html>
