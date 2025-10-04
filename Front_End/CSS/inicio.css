@@ -1,0 +1,15 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+.hero {
+      background: linear-gradient(135deg, #6a11cb 0%, #25f709 100%);
+      color: white;
+      padding: 25px 0;
+    }
+
+.feature-icon {
+      font-size: 3rem;
+      color: #007BFF;
+    }

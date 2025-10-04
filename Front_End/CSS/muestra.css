@@ -1,0 +1,41 @@
+body {
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+    }
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #343a40;
+      color: white;
+      padding-top: 20px;
+      z-index: 1000;
+    }
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .header {
+      background-color: white;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .drop-area {
+      border: 2px dashed #007BFF;
+      border-radius: 10px;
+      padding: 40px;
+      text-align: center;
+      background-color: #f8f9fa;
+      cursor: pointer;
+    }
+    .drop-area:hover {
+      background-color: #e9ecef;
+    }
